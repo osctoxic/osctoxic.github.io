@@ -10,3 +10,5 @@ think of this website, as a summarized verison of the status page
 
 # what is the website domain?
 https://osctoxic.github.io/
+
+i will only be using github.io for the domain, because i'm broke (af)

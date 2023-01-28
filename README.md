@@ -16,3 +16,6 @@ i will only be using github.io for the domain, because i'm broke (af)
 # im so bad at this hosting website shit so here's a disclaimer!!
 the website may go down because of the bunch of errors, the system is cancelling some random shit i don't even know about
 so yeah, i'm active on twitter, so let me know if it goes offline, and i'll provide a update @osctoxic 
+
+ohh also i'm using an api to host the status for me, so if (website) goes down, then the whole website will go down
+again, let me know if that happens, and i'll find another api to use.

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discord API Status</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background: linear-gradient(to right, white, black);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    #status {
+      font-size: 24px;
+      font-weight: bold;
+      color: green;
+    }
+
+    .description {
+      margin-top: 50px;
+      font-size: 18px;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>Discord API Status</h1>
+  <div id="status"></div>
+  <script>
+    const API_URL = 'https://srhpyqt94yxb.statuspage.io/api/v2/summary.json';
+
+    async function getStatus() {
+      try {
+        const response = await fetch(API_URL);
+        const data = await response.json();
+        const status = data.status.description;
+        document.getElementById('status').innerHTML = `Status: ${status}`;
+      } catch (error) {
+        console.error(error);
+        document.getElementById('status').innerHTML = 'Unable to retrieve status';
+      }
+    }
+    
+    getStatus();
+  </script>
+  <div class="description">
+    This website displays the status of Discord's APIs.
+  </div>
+  <br>
+  <a href="https://discordstatus.com/">Check out their Official Status Page.</a>
+</body>
+</html>
